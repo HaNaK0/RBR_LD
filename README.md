@@ -7,3 +7,5 @@ this is the leveldesigner for non existing game run bob run 2
 right now it isn't finished but you can run the game but you can't save or load files
 
 it's coded in python so you'll need pyhon3 I recomend the latest version
+
+to start the programm run __init__.py
