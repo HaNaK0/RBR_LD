@@ -1,0 +1,28 @@
+'''
+Created on 2 sep 2014
+
+@author: hampus.huledal
+'''
+import tkinter as tk
+
+def loadImages():
+    '''
+    @return: a Tuple of image objects
+    '''
+    try:
+        simpleTile = tk.PhotoImage(file = "..\Main\Sprites\\temp_block.ppm")
+    except tk.TclError as e:
+        print(e)
+        simpleTile = None
+    
+    try:
+        player = tk.PhotoImage(file = "..\Main\Sprites\Bob_animation_ball_2.gif")
+    except tk.TclError as e:
+        print(e)
+        player = None
+        
+    sprT = (simpleTile, player)
+        
+    return sprT
+    
+    

@@ -1,0 +1,227 @@
+'''
+Created on 13 aug 2014
+
+@author: HaNaK0
+'''
+import tkinter as tk
+import ItemGrid as ig
+import ActionStack as As
+
+
+# constructor options constants
+NEW = 'new'
+LOAD = 'load'
+
+# Tool Constants
+MOVE = 'Move'
+SELECT = 'Select'
+ERASE = 'Erase'
+
+# levelObject types constants
+BASIC = 'Basic'
+        
+class Workspace(object):
+    '''
+    the workspace 
+    contains a canvass widget
+    '''
+    
+    def __init__(self, canvasMaster, statuslBar, option = NEW, width = 608, height = 288, gridX = 32, gridY = 32, file = None):
+        '''
+        constructor
+        creates a canvas and gives it canvas Master
+        option is one of the constants NEW or LOAD
+        if New it calls create new and gives it int width, int height, int gridX, int gridY
+        if Load it calls loadWork and gives it string file
+        '''
+        #setting status bar
+        self.statusBar = statuslBar
+        
+        #creating actionStack 
+        self.actionStack = As.ActionStack(self)
+        
+        #loading images
+        try:
+            self.simpleTile = tk.PhotoImage(file = "temp_block.ppm")
+        except tk.TclError as e:
+            print(e)
+        
+        #setting values
+        self.currentTool = MOVE
+        self.statusBar.setToolModeLbl(self.currentTool)
+        
+        #setting up the canvas
+        self.canvas = tk.Canvas(canvasMaster)
+        self.canvas.pack(fill = tk.BOTH, expand = True)
+        
+        self.canvas.focus_set()
+        #binding events 
+        #Mouse events
+        self.canvas.bind("<Button-1>", self.click)
+        self.canvas.bind("<B1-Motion>", self.move)
+        self.canvas.bind("<ButtonRelease-1>", self.release)
+        
+        #Mouse position event
+        self.canvas.bind("<Motion>", self.statusBar.setMouseLbl)
+        
+        #Button events
+        #changing tool
+        self.canvas.bind("q", self.setToMove)
+        self.canvas.bind("w", self.setToSelect)
+        self.canvas.bind("e", self.setToErase)
+        
+        #Edit
+        self.canvas.bind("<Control-z>", self.actionStack.undo)
+        self.canvas.bind("<Control-y>", self.actionStack.redo)        
+        
+        #if new or load
+        if option == NEW:
+            self.createNew(width, height, gridX, gridY)
+        elif option == LOAD:
+            self.loadWork(file)
+        
+            
+    
+    def createNew(self, width, height, gridX, gridY):
+        '''
+        creates a new workspace and places a grid in it
+        and sets up variables
+        '''
+        #setting up correct values
+        self.width = width
+        self.height = height
+        
+        self.gridX = gridX
+        self.gridY = gridY
+        
+        self.moveOriginX = 0
+        self.moveOriginY = 0
+        
+        self.offsetX = 0
+        self.offsetY = 0
+        
+        #creating grid
+        for i in range(int(self.width / self.gridX)):
+            self.canvas.create_line(i * self.gridX, 0, i * self.gridX, self.height, tags = "Grid")
+            
+        for i in range(int(self.height / self.gridY)):
+            self.canvas.create_line(0, i * self.gridY, self.width, i * self.gridY, tags = "Grid")
+            
+        #creating ItemGrid
+        self.itemGrid = ig.ItemGrid(self)
+        
+            
+    
+    
+    
+    #event callback
+    #canvas event <Button-1>        
+    def click(self, event):
+        '''
+        takes care of what happens when mouse button 1 is clicked
+        '''
+        if self.currentTool == MOVE:
+            #sets the origin value to begin movement 
+            #and the start value to keep track of offset
+            self.moveOriginX = event.x
+            self.moveOriginY = event.y
+            self.moveStartX = event.x
+            self.moveStartY = event.y
+        elif self.currentTool == SELECT:
+            #creates a level object at event.x, event.y
+            self.createWorkSpItem(event.x, event.y)
+        elif self.currentTool == ERASE:
+            #destroys the object at event.x, event.y
+            self.removeWorkSpItem(event.x, event.y)
+    
+    
+    
+    #canvas event <B1-Motion>    
+    def move(self, event):
+        '''
+        takes care of what happens if mouse button 1 held down and moved
+        '''
+        self.statusBar.setMouseLbl(event)
+        
+        if self.currentTool == MOVE:
+            #moves the distance the mouse moved since last update 
+            self.canvas.move(tk.ALL, event.x - self.moveOriginX, event.y - self.moveOriginY)
+            #sets origin so movement becomes same as mouse
+            self.moveOriginX = event.x
+            self.moveOriginY = event.y
+    
+    
+    
+    #canvas event <ButtonReleas-1>        
+    def release(self, event):
+        '''
+        take cares of what happens when the mouse button 1 is released
+        '''
+        if self.currentTool == MOVE:
+            self.offsetX += event.x - self.moveStartX
+            self.offsetY += event.y - self.moveStartY
+            
+            
+    
+    
+    #canvas event 'q'        
+    def setToMove(self, event):
+        '''
+        Set tool to Move
+        '''
+        self.currentTool = MOVE
+        self.statusBar.setToolModeLbl(self.currentTool)
+        
+    
+    #canvas event 'w'
+    def setToSelect(self, event):
+        '''
+        set tool to Select
+        '''
+        self.currentTool = SELECT
+        self.statusBar.setToolModeLbl(self.currentTool)
+        
+        
+    #canvas event 'e'
+    def setToErase(self, event):
+        '''
+        set tool to erase
+        '''
+        self.currentTool = ERASE
+        self.statusBar.setToolModeLbl(self.currentTool)
+        
+    
+    
+    #creating WorkspaceItems
+    def createWorkSpItem(self, X, Y, oType = BASIC):    
+        '''
+        creating level object in canvas
+        '''
+        posGridX = int((X - self.offsetX) / self.gridX)
+        posGridY = int((Y - self.offsetY) / self.gridY)
+        
+        #Make sure new position is in grid
+        if posGridX > ((self.width - self.width % self.gridX) / self.gridX) - 1:
+            posGridX = int(((self.width - self.width % self.gridX) / self.gridX) -1)
+        elif posGridX < 0:
+            posGridX = 0
+            
+        if posGridY > ((self.height - self.height % self.gridY) / self.gridY)-1:
+            posGridY = int(((self.height - self.height % self.gridY) / self.gridY) -1)
+        elif posGridY < 0:
+            posGridY = 0
+        
+        #create the object
+        self.actionStack.actionCreate(posGridX, posGridY, oType)
+    
+    #removing WorkspaceItems
+    def removeWorkSpItem(self, X, Y):
+        posGridX = int((X - self.offsetX) / self.gridX)
+        posGridY = int((Y - self.offsetY) / self.gridY)
+        
+        #if coordinates are in range of grid
+        if posGridX <= ((self.width - self.width % self.gridX) / self.gridX) - 1 and posGridX >= 0 and posGridY <= ((self.height - self.height % self.gridY) / self.gridY)-1 and posGridY >= 0:
+            if self.itemGrid.get != None:
+                self.itemGrid.remove(posGridX, posGridY)
+        else:
+            print("out of range")

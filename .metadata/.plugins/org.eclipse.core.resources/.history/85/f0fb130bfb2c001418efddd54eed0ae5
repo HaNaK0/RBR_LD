@@ -1,0 +1,68 @@
+'''
+Created on 19 aug 2014
+
+@author: HaNaK0
+'''
+import tkinter as tk
+
+# levelObject types constants
+BASIC = 'Basic'
+
+class ItemGrid(object):
+    '''
+    The grid that contains all objects placed on screen
+    '''
+
+
+    def __init__(self, workspace):
+        '''
+        Constructor
+        '''
+        self.workspace = workspace
+        self.grid = []
+        for i in range(int(workspace.width / workspace.gridX)):
+            temp_list = []
+            for i in range(int(workspace.height / workspace.gridY)):
+                temp_list.append(None)
+            self.grid.append(temp_list)
+        
+        
+        
+    def add(self,posGridX, posGridY, objType = BASIC):
+        self.grid[posGridX][posGridY] = WorkspaceItem(self.workspace, posGridX, posGridY)
+        
+    def remove(self, posGridX, posGridY):
+        if self.grid[posGridX][posGridY] == None:
+            self.grid[posGridX][posGridY].removeObj()
+            self.grid[posGridX][posGridY] = None
+        else:
+            print("empty")
+
+    def get(self, posGridX, posGridY):
+        return self.grid[posGridX][posGridY]
+
+
+
+class WorkspaceItem(object):
+    '''
+    Level Object class
+    parent object for all objects that are able to be placed in a level
+    '''
+    OTYPE = BASIC
+    
+    def __init__(self, workspace, posGridX, posGridY):
+        self.workspace = workspace
+        self.posGridX = posGridX
+        self.posGridY = posGridY
+        self.sprite = workspace.simpleTile
+        self.canvasItem = workspace.canvas.create_image(self.posGridX * workspace.gridX + workspace.offsetX, self.posGridY * workspace.gridY + workspace.offsetY,
+                                                         image = self.sprite,
+                                                         tags = "object",
+                                                         anchor = tk.NW)
+    
+    def removeObj(self):
+        '''
+        removes the canvas item
+        '''
+        self.workspace.canvas.delete(self.canvasItem)
+        
