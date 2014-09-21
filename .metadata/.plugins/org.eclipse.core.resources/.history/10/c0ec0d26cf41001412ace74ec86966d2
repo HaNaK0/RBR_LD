@@ -112,11 +112,8 @@ class Workspace(object):
             
         #creating ItemGrid
         self.itemGrid = ig.ItemGrid(self, self.sprites)
-    
-    
         
-    def destroy(self):
-        self.canvas.destroy()       
+            
     
     
     

@@ -1,7 +1,11 @@
-INSTUPMain.__init__
-C:\Users\Hampus\Documents\GitHub\RBR_LD\RBR_LD\src\Main\__init__.py
-INFOS:&&3|1|2|0&&3|3|2|0&&3|4|2|0
-images=3
+INSTUPMain.main
+C:\Users\Hampus\Documents\GitHub\RBR_LD\RBR_LD\src\Main\main.py
+INFOS:&&1|1|2|0&&2|3|2|1&&3|4|2|5&&3|6|2|5&&3|7|2|5&&2|8|2|1
 workspace=4
-root=1
-Main.__init__=2
+images=7
+root=6
+Main.main=2
+Main.__init__=5
+__init__=3
+Main=1
+newWorkSpace=8

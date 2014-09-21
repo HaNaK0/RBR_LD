@@ -65,7 +65,7 @@ class MenuBarC(tk.Menu):
         '''
         Constructor
         '''
-        super(MenuBarC, self).__init__(master)
+        super(MenuBar, self).__init__(master)
         
         self.createMenu(newCall)
         
