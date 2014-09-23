@@ -4,9 +4,11 @@ Created on 13 aug 2014
 @author: HaNaK0
 '''
 import tkinter as tk
+from tkinter import filedialog as fd
 import ItemGrid as ig
 import ActionStack as As
 import constants as con
+import xml.etree.ElementTree as et
 
 # constructor options constants
 #NEW = 'new'
@@ -48,8 +50,10 @@ class Workspace(object):
         self.currentTool = con.TOOL["MOVE"]
         self.statusBar.setToolModeLbl(self.currentTool)
         self.currentItemType = 0
+        self.file = None
         
         #setting up the canvas
+        self.root = canvasMaster
         self.canvas = tk.Canvas(canvasMaster)
         self.canvas.pack(fill = tk.BOTH, expand = True)
         
@@ -72,6 +76,9 @@ class Workspace(object):
         self.canvas.bind("w", self.setToSelect)
         self.canvas.bind("e", self.setToPlace)
         self.canvas.bind("r", self.setToErase)
+        
+        #Save events
+        self.canvas.bind("<Control-s>", self.save)
         
         #Edit event
         self.canvas.bind("<Control-z>", self.actionStack.undo)
@@ -253,6 +260,52 @@ class Workspace(object):
         else:
             print("out of range")
             
+    def saveAs(self, event = None):
+        '''
+        opens a dialog in which you are able too choose where to save your file
+        '''
+        temp_file = self.file
+        self.file = ""
+        
+        self.file = fd.asksaveasfilename(parent = self.root, defaultextension = ".blml", title = "Save As")
+        
+        if self.file == "":
+            self.file = temp_file
+            return
+        
+        self.save()
+        
+        
+    def save(self, event = None):
+        '''
+        if already saved it saves in last location 
+        otherwise it calls the save as method
+        '''
+        if self.file == None:
+            self.saveAs()
+        
+        root = et.Element("blml", {"version" : str(0.1)})
+        
+        grid = et.SubElement(root, "grid", {"height" : str(self.height), "width" : str(self.width), "gridX" : str(self.gridX), "gridY" : str(self.gridY)}) 
+        
+        gridWidth = self.width / self.gridX
+        gridHeight = self.height / self.gridY
+        
+        for i in range(int(gridWidth)):
+            for j in range(int(gridHeight)):
+                if self.itemGrid.get(i, j) == None:
+                    continue
+                else:
+                    et.SubElement(grid, "item", {"iType" : str(self.itemGrid.get(i, j).OTYPE), "x" : str(i), "y" : str(j)})
+                
+        tree = et.ElementTree(root)
+        
+        #fileO = open(self.file, 'w')
+        tree.write(self.file)
+        #fileO.close()
+        
+        
+        
             
 def loadImages():
     '''
