@@ -13,25 +13,25 @@ class MenuBar(tk.Menu):
     '''
 
 
-    def __init__(self,master ,workspace, images):
+    def __init__(self,master ,workspace, images, newCall):
         '''
         Constructor
         '''
         super(MenuBar, self).__init__(master)
         
-        self.createMenu(workspace)
+        self.createMenu(workspace, newCall)
         
-    def createMenu(self, workspace):
+    def createMenu(self, workspace, newCall):
         '''
         create the menu bar and all cascades in it
         '''
         #File menu
         fileMenu = tk.Menu(self, tearoff = 0)
-        fileMenu.add_command(label = "New")#command = New project method
+        fileMenu.add_command(label = "New", command = newCall)
         fileMenu.add_command(label = "Open")#command = Open file method
         fileMenu.add_separator()
-        fileMenu.add_command(label = "Save")#command = Save method
-        fileMenu.add_command(label = "Save As")#command = Save as method
+        fileMenu.add_command(label = "Save", command = workspace.save)
+        fileMenu.add_command(label = "Save As", command = workspace.saveAs)
         fileMenu.add_separator()
         fileMenu.add_command(label = "Exit")#command = Exit method
         self.add_cascade(label = "File", menu = fileMenu)
@@ -51,6 +51,56 @@ class MenuBar(tk.Menu):
         helpMenu = tk.Menu(self, tearoff = 0)
         helpMenu.add_command(label = "Settings")#settings window
         self.add_cascade(label = "Help", menu = helpMenu)
+        
+
+
+class MenuBarC(tk.Menu):
+    '''
+    The menu bar for the root window when no workspace is open
+    inherits from tkinter.Menu
+    '''
+
+
+    def __init__(self,master, images, newCall):
+        '''
+        Constructor
+        '''
+        super(MenuBarC, self).__init__(master)
+        
+        self.createMenu(newCall)
+        
+    def createMenu(self, newCall):
+        '''
+        create the menu bar and all cascades in it
+        '''
+        #File menu
+        fileMenu = tk.Menu(self, tearoff = 0)
+        fileMenu.add_command(label = "New", command = newCall)#command = New project method
+        fileMenu.add_command(label = "Open")#command = Open file method
+        fileMenu.add_separator()
+        fileMenu.add_command(label = "Save")#command = Save method
+        fileMenu.add_command(label = "Save As")#command = Save as method
+        fileMenu.add_separator()
+        fileMenu.add_command(label = "Exit")#command = Exit method
+        self.add_cascade(label = "File", menu = fileMenu)
+        
+        #Edit Menu
+        editMenu = tk.Menu(self, tearoff = 0)
+        editMenu.add_command(label = "Undo")
+        editMenu.add_command(label = "Redo")
+        self.add_cascade(label = "Edit", menu = editMenu)
+        
+        #Run Menu
+        runMenu = tk.Menu(self, tearoff = 0)
+        runMenu.add_command(label = "Run")#command = Run method
+        self.add_cascade(label = "Run", menu = runMenu)
+        
+        #Help menu
+        helpMenu = tk.Menu(self, tearoff = 0)
+        helpMenu.add_command(label = "Settings")#settings window
+        self.add_cascade(label = "Help", menu = helpMenu)    
+
+
         
 class StatusBar(tk.Frame):
     '''
