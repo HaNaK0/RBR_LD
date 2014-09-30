@@ -1,9 +1,9 @@
 MODULES_MANAGER_V2
-Main.ActionStack|C:\Users\Hampus\Documents\GitHub\RBR_LD\RBR_LD\src\Main\ActionStack.py
-Main.ItemGrid|C:\Users\Hampus\Documents\GitHub\RBR_LD\RBR_LD\src\Main\ItemGrid.py
-Main.Version|C:\Users\Hampus\Documents\GitHub\RBR_LD\RBR_LD\src\Main\Version.py
-Main.__init__|C:\Users\Hampus\Documents\GitHub\RBR_LD\RBR_LD\src\Main\__init__.py
-Main.constants|C:\Users\Hampus\Documents\GitHub\RBR_LD\RBR_LD\src\Main\constants.py
-Main.main|C:\Users\Hampus\Documents\GitHub\RBR_LD\RBR_LD\src\Main\main.py
-Main.widgets|C:\Users\Hampus\Documents\GitHub\RBR_LD\RBR_LD\src\Main\widgets.py
-Main.workspace|C:\Users\Hampus\Documents\GitHub\RBR_LD\RBR_LD\src\Main\workspace.py
+Main.ActionStack|U:\programmering\rbrLD\RBR_LD\RBR_LD\src\Main\ActionStack.py
+Main.ItemGrid|U:\programmering\rbrLD\RBR_LD\RBR_LD\src\Main\ItemGrid.py
+Main.Version|U:\programmering\rbrLD\RBR_LD\RBR_LD\src\Main\Version.py
+Main.__init__|U:\programmering\rbrLD\RBR_LD\RBR_LD\src\Main\__init__.py
+Main.constants|U:\programmering\rbrLD\RBR_LD\RBR_LD\src\Main\constants.py
+Main.main|U:\programmering\rbrLD\RBR_LD\RBR_LD\src\Main\main.py
+Main.widgets|U:\programmering\rbrLD\RBR_LD\RBR_LD\src\Main\widgets.py
+Main.workspace|U:\programmering\rbrLD\RBR_LD\RBR_LD\src\Main\workspace.py
