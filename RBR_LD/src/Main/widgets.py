@@ -13,22 +13,22 @@ class MenuBar(tk.Menu):
     '''
 
 
-    def __init__(self,master ,workspace, images, newCall):
+    def __init__(self,master ,workspace, images, newCall, loadCall):
         '''
         Constructor
         '''
         super(MenuBar, self).__init__(master)
         
-        self.createMenu(workspace, newCall)
+        self.createMenu(workspace, newCall, loadCall)
         
-    def createMenu(self, workspace, newCall):
+    def createMenu(self, workspace, newCall, loadCall):
         '''
         create the menu bar and all cascades in it
         '''
         #File menu
         fileMenu = tk.Menu(self, tearoff = 0)
         fileMenu.add_command(label = "New", command = newCall)
-        fileMenu.add_command(label = "Open")#command = Open file method
+        fileMenu.add_command(label = "Open", command = loadCall)
         fileMenu.add_separator()
         fileMenu.add_command(label = "Save", command = workspace.save)
         fileMenu.add_command(label = "Save As", command = workspace.saveAs)
@@ -61,22 +61,22 @@ class MenuBarC(tk.Menu):
     '''
 
 
-    def __init__(self,master, images, newCall):
+    def __init__(self,master, images, newCall, loadCall):
         '''
         Constructor
         '''
         super(MenuBarC, self).__init__(master)
         
-        self.createMenu(newCall)
+        self.createMenu(newCall, loadCall)
         
-    def createMenu(self, newCall):
+    def createMenu(self, newCall, loadCall):
         '''
         create the menu bar and all cascades in it
         '''
         #File menu
         fileMenu = tk.Menu(self, tearoff = 0)
         fileMenu.add_command(label = "New", command = newCall)#command = New project method
-        fileMenu.add_command(label = "Open")#command = Open file method
+        fileMenu.add_command(label = "Open", command = loadCall)#command = Open file method
         fileMenu.add_separator()
         fileMenu.add_command(label = "Save")#command = Save method
         fileMenu.add_command(label = "Save As")#command = Save as method

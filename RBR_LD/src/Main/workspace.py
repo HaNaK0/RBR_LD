@@ -50,7 +50,7 @@ class Workspace(object):
         self.currentTool = con.TOOL["MOVE"]
         self.statusBar.setToolModeLbl(self.currentTool)
         self.currentItemType = 0
-        self.file = None
+        self.file = file
         
         #setting up the canvas
         self.root = canvasMaster
@@ -82,15 +82,21 @@ class Workspace(object):
         
         #Edit event
         self.canvas.bind("<Control-z>", self.actionStack.undo)
-        self.canvas.bind("<Control-y>", self.actionStack.redo)        
+        self.canvas.bind("<Control-y>", self.actionStack.redo)
+                
+        self.moveOriginX = 0
+        self.moveOriginY = 0
         
+        self.offsetX = 0
+        self.offsetY = 0
+         
         #if new or load
         if option == con.WCC["NEW"]:
             self.createNew(width, height, gridX, gridY)
         elif option == con.WCC["LOAD"]:
-            self.loadWork(file)
-        
+            self.load(file)
             
+         
     
     def createNew(self, width, height, gridX, gridY):
         '''
@@ -103,13 +109,7 @@ class Workspace(object):
         
         self.gridX = gridX
         self.gridY = gridY
-        
-        self.moveOriginX = 0
-        self.moveOriginY = 0
-        
-        self.offsetX = 0
-        self.offsetY = 0
-        
+                
         #creating grid
         for i in range(int(self.width / self.gridX)):
             self.canvas.create_line(i * self.gridX, 0, i * self.gridX, self.height, tags = "Grid")
@@ -121,6 +121,36 @@ class Workspace(object):
         self.itemGrid = ig.ItemGrid(self, self.sprites)
     
     
+    def load(self, file, event = None):
+        '''
+        loads a file and creates the set the variables for the grid
+        '''
+        tree = et.ElementTree(file = file)
+        root = tree.getroot()
+        gridEl = root.find("grid")
+        items = gridEl.findall("item")
+        
+        #setting up correct values
+        self.width = int(gridEl.get("width"))
+        self.height = int(gridEl.get("height"))
+        
+        self.gridX = int(gridEl.get("gridX"))
+        self.gridY = int(gridEl.get("gridY"))
+                
+        #creating grid
+        for i in range(int(self.width / self.gridX)):
+            self.canvas.create_line(i * self.gridX, 0, i * self.gridX, self.height, tags = "Grid")
+            
+        for i in range(int(self.height / self.gridY)):
+            self.canvas.create_line(0, i * self.gridY, self.width, i * self.gridY, tags = "Grid")
+            
+        #creating ItemGrid
+        self.itemGrid = ig.ItemGrid(self, self.sprites)
+        
+        for i in items:
+            self.itemGrid.add(int(i.get("x")), int(i.get("y")), con.OTYPE[i.get("iType")])
+            
+            
         
     def destroy(self):
         self.canvas.destroy()       
@@ -267,7 +297,7 @@ class Workspace(object):
         temp_file = self.file
         self.file = ""
         
-        self.file = fd.asksaveasfilename(parent = self.root, defaultextension = ".blml", title = "Save As")
+        self.file = fd.asksaveasfilename(parent = self.root, defaultextension = ".blml", title = "Save As", filetypes=[("rbr level file", "*.blml"), ("All files", "*.*")])
         
         if self.file == "":
             self.file = temp_file
@@ -296,14 +326,15 @@ class Workspace(object):
                 if self.itemGrid.get(i, j) == None:
                     continue
                 else:
-                    et.SubElement(grid, "item", {"iType" : str(self.itemGrid.get(i, j).OTYPE), "x" : str(i), "y" : str(j)})
+                    et.SubElement(grid, "item", {"iType" : con.ROTYPE[self.itemGrid.get(i, j).OTYPE], "x" : str(i), "y" : str(j)})
                 
         tree = et.ElementTree(root)
         
         #fileO = open(self.file, 'w')
-        tree.write(self.file)
+        tree.write(self.file, xml_declaration = True)
         #fileO.close()
         
+    
         
         
             
