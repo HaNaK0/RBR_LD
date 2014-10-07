@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="ASCII"?>
+<<<<<<< HEAD
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_WwnFYENMEeSgIv-SyVCr6Q" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_WwnFYUNMEeSgIv-SyVCr6Q" bindingContexts="_WwnvAkNMEeSgIv-SyVCr6Q">
   <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;workspace.py&quot; tooltip=&quot;RBR_LD/src/Main/workspace.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/RBR_LD/src/Main/workspace.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;ElementTree.py&quot; tooltip=&quot;C:\Python34\Lib\xml\etree\ElementTree.py&quot;>&#xD;&#xA;&lt;persistable uri=&quot;file:/C:/Python34/Lib/xml/etree/ElementTree.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;__init__.py&quot; tooltip=&quot;C:\Python34\Lib\tkinter\__init__.py&quot;>&#xD;&#xA;&lt;persistable uri=&quot;file:/C:/Python34/Lib/tkinter/__init__.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;Version.py&quot; tooltip=&quot;RBR_LD/src/Main/Version.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/RBR_LD/src/Main/Version.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;loadsave.py&quot; tooltip=&quot;RBR_LD/src/Main/loadsave.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/RBR_LD/src/Main/loadsave.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;main.py&quot; tooltip=&quot;RBR_LD/src/Main/main.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/RBR_LD/src/Main/main.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;__init__.py&quot; tooltip=&quot;RBR_LD/src/Main/__init__.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/RBR_LD/src/Main/__init__.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;widgets.py&quot; tooltip=&quot;RBR_LD/src/Main/widgets.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/RBR_LD/src/Main/widgets.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;ActionStack.py&quot; tooltip=&quot;RBR_LD/src/Main/ActionStack.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/RBR_LD/src/Main/ActionStack.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;constants.py&quot; tooltip=&quot;RBR_LD/src/Main/constants.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/RBR_LD/src/Main/constants.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;ItemGrid.py&quot; tooltip=&quot;RBR_LD/src/Main/ItemGrid.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/RBR_LD/src/Main/ItemGrid.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;LoadSprites.py&quot; tooltip=&quot;RBR_LD/src/Main/LoadSprites.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/RBR_LD/src/Main/LoadSprites.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;temp_block.ppm&quot; tooltip=&quot;RBR_LD/src/Main/Sprites/temp_block.ppm&quot;>&#xD;&#xA;&lt;persistable path=&quot;/RBR_LD/src/Main/Sprites/temp_block.ppm&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;Bob_animation_ball_2.gif&quot; tooltip=&quot;RBR_LD/src/Main/Sprites/Bob_animation_ball_2.gif&quot;>&#xD;&#xA;&lt;persistable path=&quot;/RBR_LD/src/Main/Sprites/Bob_animation_ball_2.gif&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;editList.py&quot; tooltip=&quot;RBR_LD/src/Main/editList.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/RBR_LD/src/Main/editList.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
   <children xsi:type="basic:TrimmedWindow" xmi:id="_WwnFYUNMEeSgIv-SyVCr6Q" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_WwnFYkNMEeSgIv-SyVCr6Q" label="%trimmedwindow.label.eclipseSDK" x="435" y="-18" width="840" height="1010">
+=======
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_9yFTMEiZEeSjlfU-PWbo5w" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_9yFTMUiZEeSjlfU-PWbo5w" bindingContexts="_9yF8CEiZEeSjlfU-PWbo5w">
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;dialogs.py&quot; tooltip=&quot;RBR_LD/src/Main/dialogs.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/RBR_LD/src/Main/dialogs.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;workspace.py&quot; tooltip=&quot;RBR_LD/src/Main/workspace.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/RBR_LD/src/Main/workspace.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;ElementTree.py&quot; tooltip=&quot;C:\Python34\Lib\xml\etree\ElementTree.py&quot;>&#xD;&#xA;&lt;persistable uri=&quot;file:/C:/Python34/Lib/xml/etree/ElementTree.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;__init__.py&quot; tooltip=&quot;C:\Python34\Lib\tkinter\__init__.py&quot;>&#xD;&#xA;&lt;persistable uri=&quot;file:/C:/Python34/Lib/tkinter/__init__.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;Version.py&quot; tooltip=&quot;RBR_LD/src/Main/Version.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/RBR_LD/src/Main/Version.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;loadsave.py&quot; tooltip=&quot;RBR_LD/src/Main/loadsave.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/RBR_LD/src/Main/loadsave.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;main.py&quot; tooltip=&quot;RBR_LD/src/Main/main.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/RBR_LD/src/Main/main.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;__init__.py&quot; tooltip=&quot;RBR_LD/src/Main/__init__.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/RBR_LD/src/Main/__init__.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;widgets.py&quot; tooltip=&quot;RBR_LD/src/Main/widgets.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/RBR_LD/src/Main/widgets.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;ActionStack.py&quot; tooltip=&quot;RBR_LD/src/Main/ActionStack.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/RBR_LD/src/Main/ActionStack.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;constants.py&quot; tooltip=&quot;RBR_LD/src/Main/constants.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/RBR_LD/src/Main/constants.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;ItemGrid.py&quot; tooltip=&quot;RBR_LD/src/Main/ItemGrid.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/RBR_LD/src/Main/ItemGrid.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;LoadSprites.py&quot; tooltip=&quot;RBR_LD/src/Main/LoadSprites.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/RBR_LD/src/Main/LoadSprites.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;temp_block.ppm&quot; tooltip=&quot;RBR_LD/src/Main/Sprites/temp_block.ppm&quot;>&#xD;&#xA;&lt;persistable path=&quot;/RBR_LD/src/Main/Sprites/temp_block.ppm&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;Bob_animation_ball_2.gif&quot; tooltip=&quot;RBR_LD/src/Main/Sprites/Bob_animation_ball_2.gif&quot;>&#xD;&#xA;&lt;persistable path=&quot;/RBR_LD/src/Main/Sprites/Bob_animation_ball_2.gif&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+  <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+  <tags>ModelMigrationProcessor.001</tags>
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_9yFTMUiZEeSjlfU-PWbo5w" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_9yFTMkiZEeSjlfU-PWbo5w" label="%trimmedwindow.label.eclipseSDK" x="0" y="0" width="840" height="1010">
+>>>>>>> origin/currently_working_on
     <persistedState key="coolBarVisible" value="true"/>
     <persistedState key="perspectiveBarVisible" value="true"/>
     <persistedState key="workingSets" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workingSets/>"/>
@@ -140,11 +148,20 @@
           <children xsi:type="basic:PartSashContainer" xmi:id="_WwnFf0NMEeSgIv-SyVCr6Q" selectedElement="_WwnFgkNMEeSgIv-SyVCr6Q" horizontal="true">
             <children xsi:type="basic:PartStack" xmi:id="_WwnFgENMEeSgIv-SyVCr6Q" elementId="topLeft" containerData="1543" selectedElement="_WwnFgUNMEeSgIv-SyVCr6Q">
               <tags>newtablook</tags>
+<<<<<<< HEAD
               <children xsi:type="advanced:Placeholder" xmi:id="_WwnFgUNMEeSgIv-SyVCr6Q" elementId="org.python.pydev.navigator.view" ref="_WwntHUNMEeSgIv-SyVCr6Q"/>
             </children>
             <children xsi:type="basic:PartSashContainer" xmi:id="_WwnFgkNMEeSgIv-SyVCr6Q" containerData="8457" selectedElement="_WwnFhENMEeSgIv-SyVCr6Q">
               <children xsi:type="advanced:Placeholder" xmi:id="_WwnFg0NMEeSgIv-SyVCr6Q" elementId="org.eclipse.ui.editorss" containerData="7838" ref="_WwnsdkNMEeSgIv-SyVCr6Q"/>
               <children xsi:type="basic:PartStack" xmi:id="_WwnFhENMEeSgIv-SyVCr6Q" elementId="bottom" containerData="2162" selectedElement="_WwnFhkNMEeSgIv-SyVCr6Q">
+=======
+              <tags>noFocus</tags>
+              <children xsi:type="advanced:Placeholder" xmi:id="_9yFTUUiZEeSjlfU-PWbo5w" elementId="org.python.pydev.navigator.view" ref="_9yFU1UiZEeSjlfU-PWbo5w"/>
+            </children>
+            <children xsi:type="basic:PartSashContainer" xmi:id="_9yFTUkiZEeSjlfU-PWbo5w" containerData="8457" selectedElement="_9yFTU0iZEeSjlfU-PWbo5w">
+              <children xsi:type="advanced:Placeholder" xmi:id="_9yFTU0iZEeSjlfU-PWbo5w" elementId="org.eclipse.ui.editorss" containerData="7838" ref="_9yFUMEiZEeSjlfU-PWbo5w"/>
+              <children xsi:type="basic:PartStack" xmi:id="_9yFTVEiZEeSjlfU-PWbo5w" elementId="bottom" containerData="2162" selectedElement="_9yFTVkiZEeSjlfU-PWbo5w">
+>>>>>>> origin/currently_working_on
                 <tags>newtablook</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_WwnFhUNMEeSgIv-SyVCr6Q" elementId="org.eclipse.search.ui.views.SearchView" toBeRendered="false" ref="_Wwns20NMEeSgIv-SyVCr6Q"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_WwnFhkNMEeSgIv-SyVCr6Q" elementId="org.eclipse.ui.console.ConsoleView" ref="_Wwns3kNMEeSgIv-SyVCr6Q"/>
@@ -183,12 +200,18 @@
       <tags>View</tags>
       <tags>categoryTag:Help</tags>
     </sharedElements>
+<<<<<<< HEAD
     <sharedElements xsi:type="advanced:Area" xmi:id="_WwnsdkNMEeSgIv-SyVCr6Q" elementId="org.eclipse.ui.editorss" selectedElement="_Wwnsd0NMEeSgIv-SyVCr6Q">
       <children xsi:type="basic:PartStack" xmi:id="_Wwnsd0NMEeSgIv-SyVCr6Q" elementId="PartStack@1eaf1e62" selectedElement="_WwnseENMEeSgIv-SyVCr6Q">
+=======
+    <sharedElements xsi:type="advanced:Area" xmi:id="_9yFUMEiZEeSjlfU-PWbo5w" elementId="org.eclipse.ui.editorss" selectedElement="_9yFUMUiZEeSjlfU-PWbo5w">
+      <children xsi:type="basic:PartStack" xmi:id="_9yFUMUiZEeSjlfU-PWbo5w" elementId="PartStack@1eaf1e62" selectedElement="_pbsoEEjJEeSJHK8z8bocIw">
+>>>>>>> origin/currently_working_on
         <tags>newtablook</tags>
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
         <tags>active</tags>
+<<<<<<< HEAD
         <children xsi:type="basic:Part" xmi:id="_WwnseENMEeSgIv-SyVCr6Q" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Main" iconURI="platform:/plugin/org.python.pydev/icons/python_file.gif" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;__init__.py&quot; partName=&quot;Main&quot; title=&quot;Main&quot; tooltip=&quot;RBR_LD/src/Main/__init__.py&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/RBR_LD/src/Main/__init__.py&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;127&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
@@ -197,6 +220,14 @@
           <tags>active</tags>
           <tags>activeOnClose</tags>
           <menus xsi:type="menu:PopupMenu" xmi:id="_WwnseUNMEeSgIv-SyVCr6Q" elementId="#PyEditContext">
+=======
+        <children xsi:type="basic:Part" xmi:id="_9yFUMkiZEeSjlfU-PWbo5w" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Main" iconURI="platform:/plugin/org.python.pydev/icons/python_file.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;__init__.py&quot; partName=&quot;Main&quot; title=&quot;Main&quot; tooltip=&quot;RBR_LD/src/Main/__init__.py&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/RBR_LD/src/Main/__init__.py&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;159&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.python.pydev.editor.PythonEditor</tags>
+          <tags>removeOnHide</tags>
+          <menus xsi:type="menu:PopupMenu" xmi:id="_9yFUM0iZEeSjlfU-PWbo5w" elementId="#PyEditContext">
+>>>>>>> origin/currently_working_on
             <tags>menuContribution:popup</tags>
             <tags>popup:#PyEditContext</tags>
             <tags>popup:org.python.pydev.editor.PythonEditor.EditorContext</tags>
@@ -293,8 +324,13 @@
             <tags>popup:#OverviewRulerContext</tags>
           </menus>
         </children>
+<<<<<<< HEAD
         <children xsi:type="basic:Part" xmi:id="_Wwnsi0NMEeSgIv-SyVCr6Q" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="workspace" iconURI="platform:/plugin/org.python.pydev/icons/python_file.gif" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;workspace.py&quot; partName=&quot;workspace&quot; title=&quot;workspace&quot; tooltip=&quot;RBR_LD/src/Main/workspace.py&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/RBR_LD/src/Main/workspace.py&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;6820&quot; selectionTopPixel=&quot;2700&quot;/>&#xD;&#xA;&lt;/editor>"/>
+=======
+        <children xsi:type="basic:Part" xmi:id="_9yFUSEiZEeSjlfU-PWbo5w" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="workspace" iconURI="platform:/plugin/org.python.pydev/icons/python_file.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;workspace.py&quot; partName=&quot;workspace&quot; title=&quot;workspace&quot; tooltip=&quot;RBR_LD/src/Main/workspace.py&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/RBR_LD/src/Main/workspace.py&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;3&quot; selectionOffset=&quot;626&quot; selectionTopPixel=&quot;1125&quot;/>&#xD;&#xA;&lt;/editor>"/>
+>>>>>>> origin/currently_working_on
           <tags>Editor</tags>
           <tags>org.python.pydev.editor.PythonEditor</tags>
           <tags>removeOnHide</tags>
@@ -363,8 +399,13 @@
             <tags>popup:#OverviewRulerContext</tags>
           </menus>
         </children>
+<<<<<<< HEAD
         <children xsi:type="basic:Part" xmi:id="_WwnsmENMEeSgIv-SyVCr6Q" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="ActionStack" iconURI="platform:/plugin/org.python.pydev/icons/python_file.gif" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;ActionStack.py&quot; partName=&quot;ActionStack&quot; title=&quot;ActionStack&quot; tooltip=&quot;RBR_LD/src/Main/ActionStack.py&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/RBR_LD/src/Main/ActionStack.py&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2915&quot; selectionTopPixel=&quot;1008&quot;/>&#xD;&#xA;&lt;/editor>"/>
+=======
+        <children xsi:type="basic:Part" xmi:id="_9yFUWEiZEeSjlfU-PWbo5w" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="ActionStack" iconURI="platform:/plugin/org.python.pydev/icons/python_file.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;ActionStack.py&quot; partName=&quot;ActionStack&quot; title=&quot;ActionStack&quot; tooltip=&quot;RBR_LD/src/Main/ActionStack.py&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/RBR_LD/src/Main/ActionStack.py&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2915&quot; selectionTopPixel=&quot;1200&quot;/>&#xD;&#xA;&lt;/editor>"/>
+>>>>>>> origin/currently_working_on
           <tags>Editor</tags>
           <tags>org.python.pydev.editor.PythonEditor</tags>
           <tags>removeOnHide</tags>
@@ -449,8 +490,13 @@
             <tags>popup:#OverviewRulerContext</tags>
           </menus>
         </children>
+<<<<<<< HEAD
         <children xsi:type="basic:Part" xmi:id="_WwnsqENMEeSgIv-SyVCr6Q" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="widgets" iconURI="platform:/plugin/org.python.pydev/icons/python_file.gif" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;widgets.py&quot; partName=&quot;widgets&quot; title=&quot;widgets&quot; tooltip=&quot;RBR_LD/src/Main/widgets.py&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/RBR_LD/src/Main/widgets.py&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1186&quot; selectionTopPixel=&quot;90&quot;/>&#xD;&#xA;&lt;/editor>"/>
+=======
+        <children xsi:type="basic:Part" xmi:id="_9yFUa0iZEeSjlfU-PWbo5w" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="widgets" iconURI="platform:/plugin/org.python.pydev/icons/python_file.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;widgets.py&quot; partName=&quot;widgets&quot; title=&quot;widgets&quot; tooltip=&quot;RBR_LD/src/Main/widgets.py&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/RBR_LD/src/Main/widgets.py&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;38&quot; selectionOffset=&quot;2086&quot; selectionTopPixel=&quot;735&quot;/>&#xD;&#xA;&lt;/editor>"/>
+>>>>>>> origin/currently_working_on
           <tags>Editor</tags>
           <tags>org.python.pydev.editor.PythonEditor</tags>
           <tags>removeOnHide</tags>
@@ -535,8 +581,13 @@
             <tags>popup:#OverviewRulerContext</tags>
           </menus>
         </children>
+<<<<<<< HEAD
         <children xsi:type="basic:Part" xmi:id="_WwnsuENMEeSgIv-SyVCr6Q" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="ItemGrid" iconURI="platform:/plugin/org.python.pydev/icons/python_file.gif" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;ItemGrid.py&quot; partName=&quot;ItemGrid&quot; title=&quot;ItemGrid&quot; tooltip=&quot;RBR_LD/src/Main/ItemGrid.py&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/RBR_LD/src/Main/ItemGrid.py&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;4929&quot; selectionTopPixel=&quot;453&quot;/>&#xD;&#xA;&lt;/editor>"/>
+=======
+        <children xsi:type="basic:Part" xmi:id="_9yFUfkiZEeSjlfU-PWbo5w" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="ItemGrid" iconURI="platform:/plugin/org.python.pydev/icons/python_file.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;ItemGrid.py&quot; partName=&quot;ItemGrid&quot; title=&quot;ItemGrid&quot; tooltip=&quot;RBR_LD/src/Main/ItemGrid.py&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/RBR_LD/src/Main/ItemGrid.py&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;4929&quot; selectionTopPixel=&quot;465&quot;/>&#xD;&#xA;&lt;/editor>"/>
+>>>>>>> origin/currently_working_on
           <tags>Editor</tags>
           <tags>org.python.pydev.editor.PythonEditor</tags>
           <tags>removeOnHide</tags>
@@ -579,8 +630,13 @@
             <tags>popup:#OverviewRulerContext</tags>
           </menus>
         </children>
+<<<<<<< HEAD
         <children xsi:type="basic:Part" xmi:id="_WwnswENMEeSgIv-SyVCr6Q" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="main" iconURI="platform:/plugin/org.python.pydev/icons/python_file.gif" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;main.py&quot; partName=&quot;main&quot; title=&quot;main&quot; tooltip=&quot;RBR_LD/src/Main/main.py&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/RBR_LD/src/Main/main.py&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;22&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2575&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+=======
+        <children xsi:type="basic:Part" xmi:id="_9yFUjEiZEeSjlfU-PWbo5w" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="main" iconURI="platform:/plugin/org.python.pydev/icons/python_file.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;main.py&quot; partName=&quot;main&quot; title=&quot;main&quot; tooltip=&quot;RBR_LD/src/Main/main.py&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/RBR_LD/src/Main/main.py&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;6&quot; selectionOffset=&quot;710&quot; selectionTopPixel=&quot;135&quot;/>&#xD;&#xA;&lt;/editor>"/>
+>>>>>>> origin/currently_working_on
           <tags>Editor</tags>
           <tags>org.python.pydev.editor.PythonEditor</tags>
           <tags>removeOnHide</tags>
@@ -622,6 +678,14 @@
             <tags>menuContribution:popup</tags>
             <tags>popup:#OverviewRulerContext</tags>
           </menus>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_pbsoEEjJEeSJHK8z8bocIw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="dialogs" iconURI="platform:/plugin/org.python.pydev/icons/python_file.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;dialogs.py&quot; partName=&quot;dialogs&quot; title=&quot;dialogs&quot; tooltip=&quot;RBR_LD/src/Main/dialogs.py&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/RBR_LD/src/Main/dialogs.py&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2752&quot; selectionTopPixel=&quot;660&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.python.pydev.editor.PythonEditor</tags>
+          <tags>removeOnHide</tags>
+          <tags>active</tags>
+          <tags>activeOnClose</tags>
         </children>
       </children>
     </sharedElements>
@@ -785,8 +849,13 @@
       <tags>View</tags>
       <tags>categoryTag:Java</tags>
     </sharedElements>
+<<<<<<< HEAD
     <sharedElements xsi:type="basic:Part" xmi:id="_WwntHUNMEeSgIv-SyVCr6Q" elementId="org.python.pydev.navigator.view" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="PyDev Package Explorer" iconURI="platform:/plugin/org.python.pydev/icons/pydev_package_explorer.gif" closeable="true">
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view CommonNavigator.LINKING_ENABLED=&quot;0&quot; currentWorkingSetName=&quot;Aggregate for window 1406841924250&quot; org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets=&quot;0&quot;>&#xD;&#xA;&lt;expanded IMemento.internal.id=&quot;U:/programmering/rbrLD/RBR_LD/RBR_LD&quot;/>&#xD;&#xA;&lt;expanded IMemento.internal.id=&quot;U:/programmering/rbrLD/RBR_LD/RBR_LD/src&quot;/>&#xD;&#xA;&lt;expanded IMemento.internal.id=&quot;U:/programmering/rbrLD/RBR_LD/RBR_LD/src/Main&quot;/>&#xD;&#xA;&lt;/view>"/>
+=======
+    <sharedElements xsi:type="basic:Part" xmi:id="_9yFU1UiZEeSjlfU-PWbo5w" elementId="org.python.pydev.navigator.view" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="PyDev Package Explorer" iconURI="platform:/plugin/org.python.pydev/icons/pydev_package_explorer.gif" closeable="true">
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view CommonNavigator.LINKING_ENABLED=&quot;0&quot; currentWorkingSetName=&quot;Aggregate for window 1406841924250&quot; org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets=&quot;0&quot;>&#xD;&#xA;&lt;expanded IMemento.internal.id=&quot;C:/Users/Hampus/Documents/GitHub/RBR_LD/RBR_LD&quot;/>&#xD;&#xA;&lt;expanded IMemento.internal.id=&quot;C:/Users/Hampus/Documents/GitHub/RBR_LD/RBR_LD/src&quot;/>&#xD;&#xA;&lt;expanded IMemento.internal.id=&quot;C:/Users/Hampus/Documents/GitHub/RBR_LD/RBR_LD/src/Main&quot;/>&#xD;&#xA;&lt;selected IMemento.internal.id=&quot;C:/Users/Hampus/Documents/GitHub/RBR_LD/RBR_LD/src/Main/dialogs.py&quot;/>&#xD;&#xA;&lt;/view>"/>
+>>>>>>> origin/currently_working_on
       <tags>View</tags>
       <tags>categoryTag:PyDev</tags>
       <menus xmi:id="_WwntHkNMEeSgIv-SyVCr6Q" elementId="org.python.pydev.navigator.view">
@@ -826,7 +895,11 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_WwntZkNMEeSgIv-SyVCr6Q" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
+<<<<<<< HEAD
         <children xsi:type="menu:HandledToolItem" xmi:id="_vfyxwEh3EeSjlfU-PWbo5w" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_Wwo8hUNMEeSgIv-SyVCr6Q"/>
+=======
+        <children xsi:type="menu:HandledToolItem" xmi:id="_VmV18EjDEeSJHK8z8bocIw" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_9yHJykiZEeSjlfU-PWbo5w"/>
+>>>>>>> origin/currently_working_on
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_Wwntc0NMEeSgIv-SyVCr6Q" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -853,9 +926,15 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_WwntkkNMEeSgIv-SyVCr6Q" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
+<<<<<<< HEAD
         <children xsi:type="menu:HandledToolItem" xmi:id="_vf_mEUh3EeSjlfU-PWbo5w" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_Wwo6w0NMEeSgIv-SyVCr6Q"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_WwntnUNMEeSgIv-SyVCr6Q" elementId="group.editor" toBeRendered="false">
+=======
+        <children xsi:type="menu:HandledToolItem" xmi:id="_Vme_4EjDEeSJHK8z8bocIw" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_9yGjGEiZEeSjlfU-PWbo5w"/>
+      </children>
+      <children xsi:type="menu:ToolBar" xmi:id="_9yF6o0iZEeSjlfU-PWbo5w" elementId="group.editor" toBeRendered="false">
+>>>>>>> origin/currently_working_on
         <tags>toolbarSeparator</tags>
         <children xsi:type="menu:ToolBarSeparator" xmi:id="_WwntnkNMEeSgIv-SyVCr6Q" elementId="group.editor" toBeRendered="false"/>
       </children>
@@ -1586,6 +1665,7 @@
       <tags>SHOW_RESTORE_MENU</tags>
     </children>
   </trimContributions>
+<<<<<<< HEAD
   <commands xmi:id="_Wwo6lUNMEeSgIv-SyVCr6Q" elementId="org.python.pydev.debug.ui.actions.debugEditorBasedOnNatureTypeAction" commandName="Debug editor with current interpreter" description="Debug the editor based on the python nature" category="_Wwo96kNMEeSgIv-SyVCr6Q"/>
   <commands xmi:id="_Wwo6lkNMEeSgIv-SyVCr6Q" elementId="org.eclipse.debug.ui.command.nextpage" commandName="Next Page of Memory" description="Load next page of memory" category="_Wwo92UNMEeSgIv-SyVCr6Q"/>
   <commands xmi:id="_Wwo6l0NMEeSgIv-SyVCr6Q" elementId="org.eclipse.jdt.ui.edit.text.java.search.implementors.in.project" commandName="Implementors in Project" description="Search for implementors of the selected interface in the enclosing project" category="_Wwo93kNMEeSgIv-SyVCr6Q"/>
@@ -1604,6 +1684,26 @@
     <parameters xmi:id="_Wwo6pENMEeSgIv-SyVCr6Q" elementId="cheatSheetId" name="Identifier" optional="false"/>
     <parameters xmi:id="_Wwo6pUNMEeSgIv-SyVCr6Q" elementId="name" name="Name" optional="false"/>
     <parameters xmi:id="_Wwo6pkNMEeSgIv-SyVCr6Q" elementId="url" name="URL" optional="false"/>
+=======
+  <commands xmi:id="_9yGi6kiZEeSjlfU-PWbo5w" elementId="org.python.pydev.debug.ui.actions.debugEditorBasedOnNatureTypeAction" commandName="Debug editor with current interpreter" description="Debug the editor based on the python nature" category="_9yHLL0iZEeSjlfU-PWbo5w"/>
+  <commands xmi:id="_9yGi60iZEeSjlfU-PWbo5w" elementId="org.eclipse.debug.ui.command.nextpage" commandName="Next Page of Memory" description="Load next page of memory" category="_9yHLHkiZEeSjlfU-PWbo5w"/>
+  <commands xmi:id="_9yGi7EiZEeSjlfU-PWbo5w" elementId="org.eclipse.jdt.ui.edit.text.java.search.implementors.in.project" commandName="Implementors in Project" description="Search for implementors of the selected interface in the enclosing project" category="_9yHLI0iZEeSjlfU-PWbo5w"/>
+  <commands xmi:id="_9yGi7UiZEeSjlfU-PWbo5w" elementId="org.eclipse.ui.edit.text.removeTrailingWhitespace" commandName="Remove Trailing Whitespace" description="Removes the trailing whitespace of each line" category="_9yHLHEiZEeSjlfU-PWbo5w"/>
+  <commands xmi:id="_9yGi7kiZEeSjlfU-PWbo5w" elementId="org.eclipse.team.cvs.ui.GenerateDiff" commandName="Create Patch" description="Compare your workspace contents with the server and generate a diff file that can be used as a patch file." category="_9yHLFkiZEeSjlfU-PWbo5w"/>
+  <commands xmi:id="_9yGi70iZEeSjlfU-PWbo5w" elementId="org.eclipse.jdt.ui.edit.text.java.toggleMarkOccurrences" commandName="Toggle Mark Occurrences" description="Toggles mark occurrences in Java editors" category="_9yHLLkiZEeSjlfU-PWbo5w"/>
+  <commands xmi:id="_9yGi8EiZEeSjlfU-PWbo5w" elementId="org.eclipse.pde.runtime.spy.commands.spyCommand" commandName="Plug-in Selection Spy" description="Show the Plug-in Spy" category="_9yHLGkiZEeSjlfU-PWbo5w"/>
+  <commands xmi:id="_9yGi8UiZEeSjlfU-PWbo5w" elementId="org.eclipse.jdt.debug.ui.commands.AllInstances" commandName="All Instances" description="View all instances of the selected type loaded in the target VM" category="_9yHLHkiZEeSjlfU-PWbo5w"/>
+  <commands xmi:id="_9yGi8kiZEeSjlfU-PWbo5w" elementId="org.eclipse.ui.edit.text.showChangeRulerInformation" commandName="Show Quick Diff Ruler Tooltip" description="Displays quick diff or revision information for the caret line in a focused hover" category="_9yHLJEiZEeSjlfU-PWbo5w"/>
+  <commands xmi:id="_9yGi80iZEeSjlfU-PWbo5w" elementId="org.eclipse.jdt.ui.edit.text.java.use.supertype" commandName="Use Supertype Where Possible" description="Change occurrences of a type to use a supertype instead" category="_9yHLMEiZEeSjlfU-PWbo5w"/>
+  <commands xmi:id="_9yGi9EiZEeSjlfU-PWbo5w" elementId="org.python.pydev.editor.actions.pyOrganizeImports" commandName="Python Organize Imports" description="Organize Imports" category="_9yHLK0iZEeSjlfU-PWbo5w"/>
+  <commands xmi:id="_9yGi9UiZEeSjlfU-PWbo5w" elementId="org.eclipse.egit.ui.RepositoriesViewClone" commandName="Clone a Git Repository" category="_9yHLIEiZEeSjlfU-PWbo5w"/>
+  <commands xmi:id="_9yGi9kiZEeSjlfU-PWbo5w" elementId="org.eclipse.ui.edit.text.select.textStart" commandName="Select Text Start" description="Select to the beginning of the text" category="_9yHLJEiZEeSjlfU-PWbo5w"/>
+  <commands xmi:id="_9yGi90iZEeSjlfU-PWbo5w" elementId="org.python.pydev.editor.actions.toggleforcetabs" commandName="Toggle Force tabs" description="Forces or not tabs in the current editor" category="_9yHLK0iZEeSjlfU-PWbo5w"/>
+  <commands xmi:id="_9yGi-EiZEeSjlfU-PWbo5w" elementId="org.eclipse.ui.cheatsheets.openCheatSheetURL" commandName="Open Cheat Sheet from URL" description="Open a Cheat Sheet from file at a specified URL." category="_9yHLKEiZEeSjlfU-PWbo5w">
+    <parameters xmi:id="_9yGi-UiZEeSjlfU-PWbo5w" elementId="cheatSheetId" name="Identifier" optional="false"/>
+    <parameters xmi:id="_9yGi-kiZEeSjlfU-PWbo5w" elementId="name" name="Name" optional="false"/>
+    <parameters xmi:id="_9yGi-0iZEeSjlfU-PWbo5w" elementId="url" name="URL" optional="false"/>
+>>>>>>> origin/currently_working_on
   </commands>
   <commands xmi:id="_Wwo6p0NMEeSgIv-SyVCr6Q" elementId="org.eclipse.egit.ui.RepositoriesViewRefresh" commandName="Refresh" category="_Wwo920NMEeSgIv-SyVCr6Q"/>
   <commands xmi:id="_Wwo6qENMEeSgIv-SyVCr6Q" elementId="org.eclipse.jdt.ui.navigate.open.type.in.hierarchy" commandName="Open Type in Hierarchy" description="Open a type in the type hierarchy view" category="_Wwo96ENMEeSgIv-SyVCr6Q"/>
